@@ -1,5 +1,5 @@
-# Piano tiles 
+# HushTiles 
 ---
 <div align="center">
-  <img src="art/pianotiles.gif"/>
+  <img src="art/HushTiles.gif"/>
 </div>
