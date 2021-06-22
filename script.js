@@ -90,7 +90,7 @@ function gameOver() {
   var num = score / time;
   if (isNaN(num)) { num = 0; }
   $('#mobileDisplay').css('background', 'tomato').css('color', 'white');
-  $('#game').html('<center><h1 style="margin-top:100px;">Game Over</h1><h3>Score : ' + num.toFixed(4) + ' tiles/sec </h3><a class="button button-block" onclick="location.reload();">Play Again</a></center>');
+  $('#game').html('<center><h1 style="margin-top:100px;">Game Over</h1><h3 style="background-color: pink !important;">Score : ' + score.toFixed(4) + ' tiles/sec </h3><a class="button button-block" onclick="location.reload();">Play Again</a></center>');
 }
 
 $('document').ready(function () {
