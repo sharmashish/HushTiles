@@ -6,7 +6,7 @@ var times = 0;
 var width = 1;
 var time = 0;
 var gameisover = false;
-var totalTimeSecs = 60; // 60 Sec Game
+var totalTimeSecs = 10; // 60 Sec Game
 var timer = setInterval(function () {
   var per = Math.round((width / totalTimeSecs) * 100);
   time++;
@@ -90,14 +90,15 @@ function gameOver() {
   var num = score / time;
   if (isNaN(num)) { num = 0; }
   $('#mobileDisplay').css('background', 'tomato').css('color', 'white');
-  $('#game').html('<center><h1 style="margin-top:100px;">Game Over</h1><h3 style="background-color: pink !important;">Score : ' + score.toFixed(4) + ' tiles/sec </h3><a class="button button-block" onclick="location.reload();">Play Again</a></center>');
+  $('#game').html('<center><h1 style="margin-top:100px;">Game Over</h1><h3 style="background-color: pink !important;">Score : ' + score.toFixed(0) + ' tiles </h3><a class="button button-block" onclick="location.reload();">Play Again</a></center>');
 }
 
 $('document').ready(function () {
   $('#play').click(function () {
     var audio = {};
     audio["walk"] = new Audio();
-    audio["walk"].src = "http://www.rangde.org/static/bell-ring-01.mp3"
+    // audio["walk"].src = "http://www.rangde.org/static/bell-ring-01.mp3"
+    audio["walk"].src = "https://gaana.com/song/chaar-kadam"
     audio["walk"].addEventListener('load', function () {
       audio["walk"].play();
     });
