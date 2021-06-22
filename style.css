@@ -81,3 +81,18 @@ body {
     background: tomato;
   }
 }
+.main{
+  background-color: #d46911;
+}
+.heading p{
+  text-align: center;
+  font-size: 10vh;
+  color: #00acee;
+  font-family: cursive;
+}
+.list li{
+  font-size: 4vh;
+  font-family: cursive;
+color: #fff;
+line-height: 8vh;
+}
