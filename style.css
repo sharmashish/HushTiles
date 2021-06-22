@@ -96,3 +96,20 @@ body {
 color: #fff;
 line-height: 8vh;
 }
+/* Layout Customized CSS */
+.home{
+  background-image: url("C:/Users/HP/Desktop/Toycathon Project/HushTiles/homeBackground.jpg");
+  /* background-size: auto; */
+}
+.heading{
+  font-size: 8rem;
+}
+.heading1{
+  font-size: 4rem;
+}
+.buttons{
+  margin-top: 5%;
+}
+levelButton{
+  margin-top: 2%;
+}
