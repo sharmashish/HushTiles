@@ -75,6 +75,11 @@ $(window).load(function () {
         });
         score++;
         $('#score').text(score);
+
+        if(score == 20){
+          alert("Level 1 Completed");
+          document.getElementById("demo").innerHTML="Hello";
+        }
       }
     } else {
       gameisover = true;
@@ -90,7 +95,7 @@ function gameOver() {
   var num = score / time;
   if (isNaN(num)) { num = 0; }
   $('#mobileDisplay').css('background', 'tomato').css('color', 'white');
-  $('#game').html('<center><h1 style="margin-top:100px;">Game Over</h1><h3>Score : ' + score.toFixed(0) + ' tiles </h3><a class="button button-block" onclick="location.reload();">Play Again</a></center>');
+  $('#game').html('<center><h1 style="margin-top:100px;">Game Over</h1><h3>Score : ' + score.toFixed(0) + ' tiles </h3><a class="button button-block" onclick="location.reload();">Play Again</a> <h3 id="demo"></h3></center>');
 }
 
 $('document').ready(function () {
