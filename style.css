@@ -110,6 +110,15 @@ line-height: 8vh;
 .buttons{
   margin-top: 5%;
 }
-levelButton{
-  margin-top: 2%;
+
+.bg{
+  background-image: url("C:/Users/HP/Desktop/Toycathon Project/HushTiles/whitebg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.levelBg{
+  background-image: url("C:/Users/HP/Desktop/Toycathon Project/HushTiles/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
 }
