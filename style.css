@@ -122,3 +122,18 @@ line-height: 8vh;
   background-size: 100% 100%;
 
 }
+
+/* Model css */
+.modal-title{
+  text-align: center;
+  font-family: cursive;
+  font-size: 6vh;
+  color: #d46911;
+}
+.pk{
+  text-align: center;
+  font-size: 6vh;
+  font-family: cursive;
+  color: #d46911;
+
+}
