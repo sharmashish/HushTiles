@@ -102,8 +102,6 @@ function gameOver() {
   // background-image: linear-gradient(to right top, #d16ba5, #be6caf, #a86eb6, #8f70ba, #7572ba, #617fc7, #478bd0, #2097d6, #00b2e7, #00ccf1, #00e6f4, #3bfff2);
   $('#game').html('<center><h1 style="margin-top:100px;">Game Over</h1><h3>Score : ' + score.toFixed(0) + ' tiles </h3><button style="width:300px; height:35px; border-radius:5px; margin-top:5px; margin-bottom:5px;" class="button button-block btn-info" onclick="location.reload();">Play Again</button> <div><button style="width:300px; height:35px; border-radius:5px; margin-top:5px; margin-bottom:5px;" class="button button-block btn-info href="levels.html">Goto Levels</button> <br> <button style="width:300px; height:35px; border-radius:5px; margin-top:5px; margin-bottom:5px;" class="button button-block btn-info href="theme.html">Goto Themes</button> </div> </center>');
 }
-
-
 $('document').ready(function () {
   $('#play').click(function () {
     var audio = {};
