@@ -50,6 +50,9 @@ $(window).load(function () {
       $('#game').html($('#game').html() + '<div class="set" style="bottom:' + bottom + 'px;height:' + height + 'px;">' + genSet() + '</div>');
       bottom += height;
     }
+
+    alert("Press OK Button to Start Game")
+
   $('.current div').click(function clicked() {
     if ($(this).hasClass('black')) {
       if (gameisover === false) {
