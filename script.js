@@ -1,3 +1,4 @@
+
 var game = document.getElementById('game');
 var set = [];
 var prev = 0;
@@ -97,8 +98,9 @@ function gameOver() {
   clearTimeout(timerout);
   var num = score / time;
   if (isNaN(num)) { num = 0; }
-  $('#mobileDisplay').css('background', 'tomato').css('color', 'white');
-  $('#game').html('<center><h1 style="margin-top:100px;">Game Over</h1><h3>Score : ' + score.toFixed(0) + ' tiles </h3><a class="button button-block" onclick="location.reload();">Play Again</a> <h3 id="demo"></h3></center>');
+  $('#mobileDisplay').css('background-image', 'linear-gradient(to right top, #bc2c9d, #a040a5, #844ca7, #6953a3, #52579b, #3f61a1, #2a6ba3, #1673a3, #0087b0, #009bb7, #00aeb7, #00c0b3').css('color', 'white');
+  // background-image: linear-gradient(to right top, #d16ba5, #be6caf, #a86eb6, #8f70ba, #7572ba, #617fc7, #478bd0, #2097d6, #00b2e7, #00ccf1, #00e6f4, #3bfff2);
+  $('#game').html('<center><h1 style="margin-top:100px;">Game Over</h1><h3>Score : ' + score.toFixed(0) + ' tiles </h3><button class="button button-block btn-info" onclick="location.reload();">Play Again</button> <button class="button button-block btn-info href="levels.html">Goto Levels</button> <button class="button button-block btn-info href="theme.html">Goto Themes</button> </center>');
 }
 
 $('document').ready(function () {
