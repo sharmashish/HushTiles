@@ -76,7 +76,7 @@ $(window).load(function () {
         score++;
         $('#score').text(score);
 
-        if(score == 20){
+        if(score == 25){
           alert("Level 1 Completed");
           document.getElementById("demo").innerHTML="Hello";
         }
