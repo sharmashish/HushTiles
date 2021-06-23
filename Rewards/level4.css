@@ -1,0 +1,21 @@
+h1{
+    color:black;
+    text-align: center;
+    
+
+}
+.hello{
+    background-image: linear-gradient(to right top, #bc5123, #d4751c, #e59b14, #eec317, #efed2f);
+    /* background-color: red; */
+}
+p{
+    font-size: 31px;
+}
+.heading2{
+    text-decoration: underline;
+    text-align: center;
+}
+.heading3{
+    text-decoration: underline;
+    text-align: center;
+}
