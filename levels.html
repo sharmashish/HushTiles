@@ -16,7 +16,29 @@
         <br>
         <h1 class="mt-4 mb-4" style="font-size: 4rem; background-color: white;"><b>Select Level:</b></h1>
         <div>
-            <a href="game.html"><button class="btn btn-success mt-4"><h2>Level 1</h2></button></a> <br>
+            <button type="button" class="btn btn-success mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <h2>Level 1</h2>
+              </button>
+              <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title col-12" id="exampleModalLabel">HUSH TILES</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <a href="game.html">
+          <img src="./art/play.png">
+          </a>
+          <p class="pk">Click to Play</p>
+        </div>
+        <a class="footer">
+          <button type="button" class="btn btn-secondary mb-2" style="background-color: #d46911;" data-bs-dismiss="modal">GO BACK</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
             <a href="game.html"><button class="btn btn-danger mt-4" disabled><h2>Level 2</h2></button></a> <br>
             <a href="game.html"><button class="btn btn-primary mt-4" disabled ><h2>Level 3</h2></button></a> <br>
             <a href="game.html"><button class="btn btn-warning mt-4" disabled ><h2>Level 4</h2></button></a> <br>

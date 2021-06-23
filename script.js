@@ -52,7 +52,7 @@ $(window).load(function () {
       bottom += height;
     }
 
-    alert("Press OK Button to Start Game")
+  // alert("Press OK Button to Start Game")
 
   $('.current div').click(function clicked() {
     if ($(this).hasClass('black')) {
@@ -80,9 +80,9 @@ $(window).load(function () {
         score++;
         $('#score').text(score);
 
-        if(score == 25){
+        if (score == 25) {
           alert("Level 1 Completed");
-          document.getElementById("demo").innerHTML="Hello";
+          document.getElementById("demo").innerHTML = "Hello";
         }
       }
     } else {
